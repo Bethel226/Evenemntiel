@@ -7,14 +7,19 @@ import { NotFoundComponent } from './modules/general/not-found/not-found.compone
 import { AppRoutingModule } from './app-routing.module';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { HttpClientModule } from '@angular/common/http';
+import { VoirplusComponent } from './modules/general/voirplus/voirplus.component';
+import { EvenementComponent } from './modules/general/evenement/evenement.component';
 
 import { HeaderModule } from './components/header/header.module';
 import { FooterModule } from './components/footer/footer.module';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
+    EvenementComponent,
+    VoirplusComponent,
     NotFoundComponent,
   ],
   imports: [
@@ -23,6 +28,7 @@ import { FooterModule } from './components/footer/footer.module';
     HttpClientModule,
     HeaderModule,
     FooterModule,
+    FormsModule,
     ServiceWorkerModule.register('ngsw-worker.js', {
       enabled: !isDevMode(),
       // Register the ServiceWorker as soon as the application is stable
