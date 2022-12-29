@@ -1,1 +1,94 @@
-<p>acheter works!</p>
+
+    <!-- ======= Buy Ticket Section ======= -->
+    <section id="buy-tickets" class="section-with-bg">
+        <div class="container" data-aos="fade-up">
+  
+          <div class="section-header">
+            <h2>Acheter Tickets</h2>
+            <p>Pour tout vos achats, veuillez suivre ce processus.</p>
+          </div>
+  
+          <div class="row">
+
+            <div class="col-lg-3" data-aos="fade-up" data-aos-delay="200">
+              
+            </div>
+
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+              <div class="card mb-5 mb-lg-0">
+                <div class="card-body">
+                    <img src="assets/img2/speakers/diner1.jpg" alt="Speaker 1" class="img-fluid">
+                  <h5 class="card-title text-muted text-uppercase text-center">Standard Access</h5>
+                  <h6 class="card-price text-center">50.000FCFA</h6>
+                  <hr>
+                  <ul class="fa-ul">
+                    <li><span class="fa-li"><i class="fa fa-check"></i></span>Nom</li>
+                    <li><span class="fa-li"><i class="fa fa-check"></i></span>Date de debut</li>
+                    <li><span class="fa-li"><i class="fa fa-check"></i></span>Date de fin</li>
+                    <li><span class="fa-li"><i class="fa fa-check"></i></span>Heure de debut</li>
+                    <li><span class="fa-li"><i class="fa fa-check"></i></span>Heure de fin</li>
+                    <li><span class="fa-li"><i class="fa fa-check"></i></span>Prix</li> 
+                  </ul>
+                  <hr>
+                  <div class="text-center">
+                    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#buy-ticket-modal" data-ticket-type="standard-access">Acheter maintenant</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Pro Tier -->
+            <div class="col-lg-3" data-aos="fade-up" data-aos-delay="300">
+              
+            </div>
+          </div>
+  
+        </div>
+  
+        <!-- Modal Order Form -->
+        <div id="buy-ticket-modal" class="modal fade">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title">Acheter Tickets</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <form method="POST" action="#">
+                  <div class="form-group">
+                    <input type="text" class="form-control" name="your-name" placeholder="Nom">
+                  </div>
+                  <div class="form-group mt-3">
+                    <input type="text" class="form-control" name="your-email" placeholder="Email">
+                  </div>
+                  <div class="form-group mt-3 mb-3">
+                    <select id="ticket-type" name="ticket-type" class="form-select">
+                      <option value="">-- Selectionne le type de Ticket --</option>
+                      <option value="standard-access">Standard Access</option>
+                      <option value="pro-access">Pro Access</option>
+                      <option value="premium-access">Premium Access</option>
+                    </select>
+                  </div> 
+
+                  <div class="form-group">
+                    <input type="text" class="form-control" name="your-name" placeholder="Nombre de ticket">
+                  </div>
+
+                  <div class="form-group mt-3">
+                    <select id="ticket-type" name="ticket-type" class="form-select">
+                      <option value="">-- Selectionne le mode de paiement --</option>
+                      <option value="standard-access">Orange Money</option>
+                      <option value="pro-access">Moov Money</option>
+                      <option value="premium-access">Carte bancaire</option>
+                    </select>
+                  </div>
+                  <div class="text-center mt-3">
+                    <button type="submit" class="btn">Acheter maintenant</button>
+                  </div>
+                </form>
+              </div>
+            </div><!-- /.modal-content -->
+          </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+  
+      </section><!-- End Buy Ticket Section -->
