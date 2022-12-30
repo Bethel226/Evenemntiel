@@ -7,7 +7,6 @@ import { NotFoundComponent } from './modules/general/not-found/not-found.compone
 import { AppRoutingModule } from './app-routing.module';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { HttpClientModule } from '@angular/common/http';
-import { VoirplusComponent } from './modules/general/voirplus/voirplus.component';
 import { EvenementComponent } from './modules/general/evenement/evenement.component';
 
 import { HeaderModule } from './components/header/header.module';
@@ -19,7 +18,6 @@ import { FormsModule } from '@angular/forms';
     AppComponent,
     HomeComponent,
     EvenementComponent,
-    VoirplusComponent,
     NotFoundComponent,
   ],
   imports: [
