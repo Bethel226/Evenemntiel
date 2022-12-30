@@ -10,7 +10,11 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { HeaderModule } from './components/header/header.module';
 import { FooterModule } from './components/footer/footer.module';
+<<<<<<< HEAD
 import { FormsModule,ReactiveFormsModule } from '@angular/forms';
+=======
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+>>>>>>> 06f763f93560c3201c5461d25cf9a413679c6f20
 
 @NgModule({
   declarations: [

@@ -13,13 +13,15 @@
       <div class="card-header text-white bg-info">Créer un événement</div>
   
       <div class="card-body">
-        <form>
+        <form (ngSubmit)="save(f)" #f="ngForm">
           <div class="form-group row mb-2">
             <label for="hotelNameId" class="col-md-2 col-form-label">
               Nom de l'événement
             </label>
             <div class="col-md-8">
               <input
+               ngModel
+                name="nom"
                 id="hotelNameId"
                 type="text"
                 class="form-control"
@@ -30,10 +32,18 @@
               </span>
             </div>
           </div>
+<<<<<<< HEAD
           <div class="form-group row mb-2">
             <label for="hotelPriceId" class="col-md-2 col-form-label">
               Prix</label
             >
+=======
+         
+         <!--  <div class="form-group row mb-2">
+            <label for="starRatingId" class="col-md-2 col-form-label">
+              Date de début
+            </label>
+>>>>>>> 06f763f93560c3201c5461d25cf9a413679c6f20
             <div class="col-md-8">
               <input
                 id="hotelPriceId"
@@ -145,7 +155,7 @@
                 Supprimer
               </button>
             </div>
-          </div>
+          </div> -->
         </form>
       </div>
     </div>

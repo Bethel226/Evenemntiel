@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-dashboard',
@@ -7,4 +8,7 @@ import { Component } from '@angular/core';
 })
 export class DashboardComponent {
 
+  save(f:NgForm){
+    console.log(f.value["nom"]);
+  }
 }
