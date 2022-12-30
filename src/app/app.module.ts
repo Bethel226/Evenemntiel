@@ -11,7 +11,7 @@ import { EvenementComponent } from './modules/general/evenement/evenement.compon
 
 import { HeaderModule } from './components/header/header.module';
 import { FooterModule } from './components/footer/footer.module';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -27,6 +27,7 @@ import { FormsModule } from '@angular/forms';
     HeaderModule,
     FooterModule,
     FormsModule,
+    ReactiveFormsModule,
     ServiceWorkerModule.register('ngsw-worker.js', {
       enabled: !isDevMode(),
       // Register the ServiceWorker as soon as the application is stable
