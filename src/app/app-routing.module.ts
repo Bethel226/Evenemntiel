@@ -5,11 +5,12 @@ import { AcheterComponent } from './modules/general/acheter/acheter.component';
 import { ContactComponent } from './modules/general/contact/contact.component';
 import { EvenementComponent } from './modules/general/evenement/evenement.component';
 import { VoirplusComponent } from './modules/general/voirplus/voirplus.component';
-
 import { HomeComponent } from './modules/general/home/home.component';
 import { LoginComponent } from './modules/general/login/login.component';
 import { NotFoundComponent } from './modules/general/not-found/not-found.component';
 import { SignupComponent } from './modules/general/signup/signup.component';
+import { DashboardComponent } from './modules/general/dashboard/dashboard.component';
+import { AuthserviceService } from './authservice.service';
 
 const routes: Routes = [
   { path: '', component: HomeComponent, },
@@ -18,10 +19,13 @@ const routes: Routes = [
   { path: 'login', component: LoginComponent, },
   { path: 'signup', component: SignupComponent, },
   { path: 'evenement', component: EvenementComponent, },
+  { path: 'dashboard', component: DashboardComponent, },
+
   { path: 'evenement', children: [
     {path: 'evenement/voirplus', component: VoirplusComponent},
     {path: 'evenement/acheter', component: AcheterComponent},
   ]},
+  
   // { path: 'acheter', component: AcheterComponent, },
   // { path: 'voirplus', component: VoirplusComponent, },
 
